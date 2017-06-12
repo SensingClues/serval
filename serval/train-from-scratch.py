@@ -153,9 +153,9 @@ if __name__ == '__main__':
     model.compile(loss='categorical_crossentropy', optimizer=optimizer, metrics=['accuracy'])
 
     # Train model
-    batch_size = 300
+    batch_size = 100
     EPOCH_MULTIPLIER = 10
-    epochs = 2000 // EPOCH_MULTIPLIER
+    epochs = 1000 // EPOCH_MULTIPLIER
     epoch_size = len(meta) * EPOCH_MULTIPLIER
     bpe = epoch_size // batch_size
 
@@ -163,7 +163,6 @@ if __name__ == '__main__':
 
     model.fit_generator(generator=iterbatches(batch_size, meta),
                         steps_per_epoch=bpe,
-                        validation_split=0.33,
                         epochs=epochs)
 
     with open('model.json', 'w') as file:
