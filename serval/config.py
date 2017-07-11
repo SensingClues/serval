@@ -19,7 +19,7 @@ SEGMENT_LENGTH = 100  # Lookback window for classification, in chunks, 100 @ 20 
 
 PROCESSING_DELAY = 3  # Audio streaming delay compensation, in processing steps
 
-MEL_BANDS = 80  # Number of mel frequency bands
+MEL_BANDS = 120  # 80 Number of mel frequency bands
 MEL_FREQS = librosa.core.mel_frequencies(n_mels=MEL_BANDS)
 
 AUDIO_MEAN = 20.0

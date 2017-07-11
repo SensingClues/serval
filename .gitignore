@@ -101,6 +101,7 @@ ENV/
 .mypy_cache/
 
 # data
-#serval/dataset/audio
+serval/dataset/audio
 serval/dataset/tmp
+serval/dataset
 
