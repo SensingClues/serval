@@ -105,3 +105,6 @@ serval/dataset/audio
 serval/dataset/tmp
 serval/dataset
 
+# models to big
+serval-igor/youtube-8m-master/models
+
