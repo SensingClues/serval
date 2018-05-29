@@ -108,3 +108,6 @@ serval/dataset
 # models to big
 serval-igor/youtube-8m-master/models
 
+# hugo tmp
+serval-hugo/tmp
+serval-hugo/features
