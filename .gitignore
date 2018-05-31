@@ -108,8 +108,7 @@ serval/dataset
 # models too big
 serval-igor/*/.ipynb_checkpoints
 serval-igor/*/__pycache__
-serval-igor/*/models/*
-serval-igor/*/test_data/*
-serval-igor/*/train_data/*
-serval-igor/*/train_data_new/*
 serval-igor/*/csv_files/*
+serval-igor/*/models/*
+serval-igor/*/tfrecords/*
+serval-igor/*/wav_files/*
