@@ -105,6 +105,11 @@ serval/dataset/audio
 serval/dataset/tmp
 serval/dataset
 
+
+# hugo tmp
+serval-hugo/tmp
+serval-hugo/features
+
 # models too big
 serval-igor/*/.ipynb_checkpoints
 serval-igor/*/__pycache__
