@@ -80,6 +80,10 @@ class FrameLevelLogisticModel(models.BaseModel):
     output = slim.fully_connected(
         avg_pooled, vocab_size, activation_fn=tf.nn.sigmoid,
         weights_regularizer=slim.l2_regularizer(1e-8))
+    
+    # hk
+    tf.summary.histogram("output_hist", output)
+
     return {"predictions": output}
 
 class DbofModel(models.BaseModel):

@@ -72,7 +72,9 @@ def AddGlobalStepSummary(summary_writer,
   this_perr = global_step_info_dict["perr"]
   this_loss = global_step_info_dict["loss"]
   examples_per_second = global_step_info_dict.get("examples_per_second", -1)
-
+  # hk
+  this_hk_test = global_step_info_dict["hk_test"]
+  
   summary_writer.add_summary(
       MakeSummary("GlobalStep/" + summary_scope + "_Hit@1", this_hit_at_one),
       global_step_val)
@@ -81,6 +83,10 @@ def AddGlobalStepSummary(summary_writer,
       global_step_val)
   summary_writer.add_summary(
       MakeSummary("GlobalStep/" + summary_scope + "_Loss", this_loss),
+      global_step_val)
+  # hk  
+  summary_writer.add_summary(
+      MakeSummary("GlobalStep/" + summary_scope + "_HK_test", this_hk_test),
       global_step_val)
 
   if examples_per_second != -1:
@@ -119,6 +125,8 @@ def AddEpochSummary(summary_writer,
   aps = epoch_info_dict["aps"]
   gap = epoch_info_dict["gap"]
   mean_ap = numpy.mean(aps)
+    
+  hk_test = epoch_info_dict["hk_test"]
 
   summary_writer.add_summary(
       MakeSummary("Epoch/" + summary_scope + "_Avg_Hit@1", avg_hit_at_one),
@@ -135,6 +143,18 @@ def AddEpochSummary(summary_writer,
   summary_writer.add_summary(
       MakeSummary("Epoch/" + summary_scope + "_GAP", gap),
           global_step_val)
+  # hk  
+  summary_writer.add_summary(
+      #MakeSummary("Epoch/" + summary_scope + "_hk_aps", aps),
+      tf.summary.histogram("Epoch/" + summary_scope + "_hk_aps", aps),
+      global_step_val)
+  
+    
+  #hk get ground thruth
+  ground_thruth = get_labels(FLAGS.class_map)
+
+  labels = [ground_thruth[k] for k in ground_thruth]
+
   summary_writer.flush()
 
   info = ("epoch/eval number {0} | Avg_Hit@1: {1:.3f} | Avg_PERR: {2:.3f} "
