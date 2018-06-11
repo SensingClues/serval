@@ -1,0 +1,32 @@
+index,mid,display_name,superclass
+0,/m/09x0r,Speech,Speech
+1,/m/05zppz,"Male speech, man speaking",Speech
+2,/m/02zsn,"Female speech, woman speaking",Speech
+3,/m/0ytgt,"Child speech, kid speaking",Speech
+4,/m/01h8n0,Conversation,Speech
+5,/m/02qldy,"Narration, monologue",Speech
+6,/m/0261r1,Babbling,Speech
+7,/m/0brhx,Speech synthesizer,Speech
+8,/m/0jbk,Animal,Animal
+9,/m/068hy,"Domestic animals, pets",Animal
+10,/m/0ch8v,"Livestock, farm animals, working animals",Animal
+11,/m/01280g,Wild animals,Animal
+12,/m/04rlf,Music,Music
+13,/m/04szw,Musical instrument,Music
+14,/m/07yv9,Vehicle,Vehicle
+15,/m/019jd,"Boat, Water vehicle",Vehicle
+16,/m/012f08,Motor vehicle (road),Vehicle
+17,/m/06d_3,Rail transport,Vehicle
+18,/m/0k5j,Aircraft,Vehicle
+19,/m/07k1x,Tools,Tools
+20,/m/03l9g,Hammer,Tools
+21,/m/03p19w,Jackhammer,Tools
+22,/m/01b82r,Sawing,Tools
+23,/m/02p01q,Filing (rasp),Tools
+24,/m/023vsd,Sanding,Tools
+25,/m/0_ksk,Power tool,Tools
+26,/m/032s66,"Gunshot, gunfire","Gunshot, gunfire"
+27,/m/04zjc,Machine gun,"Gunshot, gunfire"
+28,/m/02z32qm,Fusillade,"Gunshot, gunfire"
+29,/m/0_1c,Artillery fire,"Gunshot, gunfire"
+30,/m/073cg4,Cap gun,"Gunshot, gunfire"

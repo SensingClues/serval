@@ -19,6 +19,8 @@ import numpy
 import tensorflow as tf
 from tensorflow import logging
 
+from utils_confusion_matrix import get_labels
+
 try:
   xrange          # Python 2
 except NameError:
@@ -105,6 +107,7 @@ def AddGlobalStepSummary(summary_writer,
 def AddEpochSummary(summary_writer,
                     global_step_val,
                     epoch_info_dict,
+                    gt_labels,
                     summary_scope="Eval"):
   """Add the epoch summary to the Tensorboard.
 
@@ -144,17 +147,21 @@ def AddEpochSummary(summary_writer,
       MakeSummary("Epoch/" + summary_scope + "_GAP", gap),
           global_step_val)
   # hk  
-  summary_writer.add_summary(
-      #MakeSummary("Epoch/" + summary_scope + "_hk_aps", aps),
-      tf.summary.histogram("Epoch/" + summary_scope + "_hk_aps", aps),
-      global_step_val)
-  
+  # iterate over ground thruth class labels and add average precision of that class
+  f = open('eval-001-k03.csv','w')
+  # write header
+  f.write('label;aps\n')
+  for i in range(len(gt_labels)):
+    #print(gt_labels[i] + " : " + str(aps[i]))
+    f.write(gt_labels[i] + ";" + str(aps[i]) + '\n') 
+    # write to tensorboard
+    summary_writer.add_summary(
+      MakeSummary("Epoch/" + summary_scope + "_Label_" + gt_labels[i], aps[i]),
+          global_step_val)
+  # close file
+  f.close()
+
     
-  #hk get ground thruth
-  ground_thruth = get_labels(FLAGS.class_map)
-
-  labels = [ground_thruth[k] for k in ground_thruth]
-
   summary_writer.flush()
 
   info = ("epoch/eval number {0} | Avg_Hit@1: {1:.3f} | Avg_PERR: {2:.3f} "
