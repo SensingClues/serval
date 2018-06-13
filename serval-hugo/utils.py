@@ -148,7 +148,7 @@ def AddEpochSummary(summary_writer,
           global_step_val)
   # hk  
   # iterate over ground thruth class labels and add average precision of that class
-  f = open('eval-serval001-k10.csv','w')
+  f = open('eval-serval003-k10-amsterdam-21.csv','w')
   # write header
   f.write('label;aps\n')
   for i in range(len(gt_labels)):
