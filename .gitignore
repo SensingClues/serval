@@ -115,5 +115,6 @@ serval-igor/*/.ipynb_checkpoints
 serval-igor/*/__pycache__
 serval-igor/*/csv_files/*
 serval-igor/*/models/*
+serval-igor/*/yt8m/*
 serval-igor/*/tfrecords/*
 serval-igor/*/wav_files/*
