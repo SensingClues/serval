@@ -15,7 +15,7 @@ def get_labels(file_loc):
         next(f)  # skip header
         reader = csv.reader(f, delimiter = ";")
         for row in reader:
-            class_map[int(row[0])] = row[3]
+            class_map[int(row[0])] = row[2]
     return class_map
 
 
