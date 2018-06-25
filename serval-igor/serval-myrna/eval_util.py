@@ -21,6 +21,10 @@ from tensorflow.python.platform import gfile
 import mean_average_precision_calculator as map_calculator
 import average_precision_calculator as ap_calculator
 
+# hk
+from utils_confusion_matrix import plot_confusion_matrix
+from utils_confusion_matrix import get_labels
+
 def flatten(l):
   """ Merges a list of lists into a single list. """
   return [item for sublist in l for item in sublist]
@@ -155,8 +159,9 @@ class EvaluationMetrics(object):
     self.global_ap_calculator = ap_calculator.AveragePrecisionCalculator()
     self.top_k = top_k
     self.num_examples = 0
-
-  def accumulate(self, predictions, labels, loss):
+    self.hk_test = 0
+    
+  def accumulate(self, predictions, labels, loss, gt_labels):
     """Accumulate the metrics calculated locally for this mini-batch.
 
     Args:
@@ -187,8 +192,21 @@ class EvaluationMetrics(object):
     self.sum_hit_at_one += mean_hit_at_one * batch_size
     self.sum_perr += mean_perr * batch_size
     self.sum_loss += mean_loss * batch_size
+    
+    # hk
+    hk_test = self.hk_test
+    # the top prediction for this sample
+    #sparse_prediction, sparse_label, num_positive = top_k_by_class(predictions, labels, 1)
+    #print(sparse_prediction,sparse_label, num_positive)
+    #print(sparse_prediction.shape,sparse_label.shape, num_positive.shape)
+    
+    
+    # calc conf matrix tensor
+#     img_d_summary = plot_confusion_matrix(correct_labels = labels, 
+#                                           predict_labels = predictions, 
+#                                           labels = gt_labels, tensor_name='dev/cm')
 
-    return {"hit_at_one": mean_hit_at_one, "perr": mean_perr, "loss": mean_loss}
+    return {"hit_at_one": mean_hit_at_one, "perr": mean_perr, "loss": mean_loss, "hk_test": hk_test}
 
   def get(self):
     """Calculate the evaluation metrics for the whole epoch.
@@ -209,10 +227,12 @@ class EvaluationMetrics(object):
 
     aps = self.map_calculator.peek_map_at_n()
     gap = self.global_ap_calculator.peek_ap_at_n()
+    
+    hk_test = self.hk_test
 
     epoch_info_dict = {}
     return {"avg_hit_at_one": avg_hit_at_one, "avg_perr": avg_perr,
-            "avg_loss": avg_loss, "aps": aps, "gap": gap}
+            "avg_loss": avg_loss, "aps": aps, "gap": gap, "hk_test": hk_test}
 
   def clear(self):
     """Clear the evaluation metrics and reset the EvaluationMetrics object."""
