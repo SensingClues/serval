@@ -160,6 +160,8 @@ class EvaluationMetrics(object):
     self.top_k = top_k
     self.num_examples = 0
     self.hk_test = 0
+    self.predictions = []
+    self.labels = []
     
   def accumulate(self, predictions, labels, loss, gt_labels):
     """Accumulate the metrics calculated locally for this mini-batch.
@@ -195,10 +197,10 @@ class EvaluationMetrics(object):
     
     # hk
     hk_test = self.hk_test
-    # the top prediction for this sample
-    #sparse_prediction, sparse_label, num_positive = top_k_by_class(predictions, labels, 1)
-    #print(sparse_prediction,sparse_label, num_positive)
-    #print(sparse_prediction.shape,sparse_label.shape, num_positive.shape)
+    # list of numpy arrays of predictions for each batch
+    self.predictions.append(predictions)
+    self.labels.append(labels)
+    #print(sparse_labels)
     
     
     # calc conf matrix tensor
@@ -242,3 +244,37 @@ class EvaluationMetrics(object):
     self.map_calculator.clear()
     self.global_ap_calculator.clear()
     self.num_examples = 0
+    # hk
+    self.predictions = []
+    self.labels = []
+    
+    
+  def store(self):
+    """store the evaluation metrics to a csv file."""
+    # hk  
+    import csv
+    
+    # predictions
+    p = numpy.vstack(self.predictions)
+    numpy.savetxt("predictions.csv", p, delimiter=",")
+
+    # labels
+    l = numpy.vstack(self.labels)
+    numpy.savetxt("labels.csv", l, delimiter=",")
+
+#     with open('predictions.csv', "w") as csv_file:
+#             writer = csv.writer(csv_file, delimiter=',')
+#             for line in self.predictions:
+#                 writer.writerow(line)
+                
+                
+#     # iterate over ground thruth class labels and add average precision of that class
+#     f = open('predictions.csv','w')
+#     # write header
+#     #f.write('label;aps\n')
+#     for p in self.predictions:
+#         #print(gt_labels[i] + " : " + str(aps[i]))
+#         f.write(p) 
+#     # close file
+#     f.close()
+    
