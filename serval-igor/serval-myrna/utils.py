@@ -108,7 +108,8 @@ def AddEpochSummary(summary_writer,
                     global_step_val,
                     epoch_info_dict,
                     gt_labels,
-                    summary_scope="Eval"):
+                    summary_scope="Eval",
+                    csv_file = "csv_files/csv_labels_indices_score.csv"):
   """Add the epoch summary to the Tensorboard.
 
   Args:
@@ -148,7 +149,7 @@ def AddEpochSummary(summary_writer,
           global_step_val)
   # hk  
   # iterate over ground thruth class labels and add average precision of that class
-  f = open('csv_files/class_labels_indices_score.csv','w')
+  f = open(csv_file,'w')
   # write header
   f.write('label;aps\n')
   for i in range(len(gt_labels)):

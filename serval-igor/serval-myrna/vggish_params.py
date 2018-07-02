@@ -50,8 +50,8 @@ VGGISH_PCA_PARAMS = 'yt8m/vggish_pca_params.npz'
 VGGISH_INPUT_TENSOR_NAME = 'vggish/input_features:0'
 VGGISH_OUTPUT_TENSOR_NAME = 'vggish/embedding:0'
 
-YOUTUBE_CHECKPOINT_FILE = 'models/model.ckpt-10'
-CLASS_LABELS_INDICES = 'csv_files/class_labels_indices_amsterdam.csv'
+YOUTUBE_CHECKPOINT_FILE = 'models/youtube_model.ckpt'
+CLASS_LABELS_INDICES = 'csv_files/class_labels_indices.csv'
 
 # Predictions filter
 PREDICTIONS_COUNT_LIMIT = 20
