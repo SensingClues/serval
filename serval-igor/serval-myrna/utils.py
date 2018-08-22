@@ -109,7 +109,7 @@ def AddEpochSummary(summary_writer,
                     epoch_info_dict,
                     gt_labels,
                     summary_scope="Eval",
-                    csv_file = "csv_files/csv_labels_indices_score.csv"):
+                    csv_file = "csv_files/class_labels_indices_score.csv"):
   """Add the epoch summary to the Tensorboard.
 
   Args:
