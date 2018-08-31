@@ -1,0 +1,36 @@
+index,mid,display_name
+0,/m/09x0r,Speech
+1,/m/01h8n0,Conversation
+2,/m/0jbk,Animal
+3,/m/068hy,"Domestic animals, pets"
+4,/m/04rlf,Music
+5,/m/04szw,Musical instrument
+6,/m/07yv9,Vehicle
+7,/m/019jd,"Boat, Water vehicle"
+8,/m/012f08,Motor vehicle (road)
+9,/m/06d_3,Rail transport
+10,/m/0k5j,Aircraft
+11,/m/07k1x,Tools
+12,/m/03l9g,Hammer
+13,/m/03p19w,Jackhammer
+14,/m/0_ksk,Power tool
+15,/m/032s66,"Gunshot, gunfire"
+16,/m/04zjc,Machine gun
+17,/m/012f08,Motor vehicle (road)
+18,/m/0k4j,Car
+19,/m/0912c9,"Vehicle horn, car horn, honking"
+20,/t/dd00134,Car passing by
+21,/m/01bjv,Bus
+22,/m/03j1ly,Emergency vehicle
+23,/m/04qvtq,Police car (siren)
+24,/m/012n7d,Ambulance (siren)
+25,/m/012ndj,"Fire engine, fire truck (siren)"
+26,/m/04_sv,Motorcycle
+27,/m/0btp2,"Traffic noise, roadway noise"
+28,/m/01j4z9,Chainsaw
+29,/t/dd00066,Medium engine (mid frequency)
+30,/t/dd00067,Heavy engine (low frequency)
+31,/t/dd00130,Engine starting
+32,/m/07pb8fc,Idling
+33,/m/07q2z82,"Accelerating, revving, vroom"
+34,/t/dd00048,Train wheels squealing
