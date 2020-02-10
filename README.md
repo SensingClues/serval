@@ -2,6 +2,8 @@
 
 Sound Event Recognition-based Vigilance for Alerting and Localisation
 
+Rework of the original setup in 2020, old code is archived in the folder 20200209-old-code.
+
 
 ## Installation
 See to original [EARS project](https://github.com/karoldvl/EARS/tree/master/ears) for setup details. 

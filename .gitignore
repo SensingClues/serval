@@ -105,23 +105,14 @@ serval/dataset/audio
 serval/dataset/tmp
 serval/dataset
 
-
-# hugo tmp
-serval-hugo/tmp
-serval-hugo/features
-
-# vggish
-serval-vvgish/wav_files
-serval-vvgish/models
-
-# igor
-serval-igor/*/.ipynb_checkpoints
-serval-igor/*/__pycache__
-serval-igor/*/csv_files/*
-serval-igor/*/models/*
-serval-igor/*/yt8m/*
-serval-igor/*/tfrecords/*
-serval-igor/*/wav_files/*
-serval-igor/*/gunshots/*
-serval-igor/*/elephants/*
-serval-igor/*/bush/*
+# serval
+serval/*/.ipynb_checkpoints
+serval/*/__pycache__
+serval/*/csv_files/*
+serval/*/models/*
+serval/*/yt8m/*
+serval/*/tfrecords/*
+serval/*/wav_files/*
+serval/*/gunshots/*
+serval/*/elephants/*
+serval/*/bush/*
