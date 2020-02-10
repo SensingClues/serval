@@ -1,0 +1,14 @@
+curl data.yt8m.org/download.py | shard=1,1000 partition=1/video_level/train mirror=eu python
+
+python ../serval-igor/youtube-8m-master/train.py --train_data_pattern='./features/train*.tfrecord' --model=LogisticModel --train_dir=$MODEL_DIR/video_level_logistic_model
+
+--feature_names="mean_rgb, mean_audio" --feature_sizes="1024, 128"
+
+--feature_names="mean_audio" --feature_sizes="128"
+
+python ../serval-igor/youtube-8m-master/train.py --train_data_pattern='./features/train*.tfrecord' --model=LogisticModel --train_dir=$MODEL_DIR/video_level_logistic_model 
+
+gsutil rsync -d -r features gs://{region}_audioset/youtube_corpus/v1/features
+gsutil rsync -d -r features gs://eu_audioset/youtube_corpus/v1/features
+
+http://storage.googleapis.com/eu_audioset/youtube_corpus/v1/features/features.tar.gz

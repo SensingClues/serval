@@ -1,0 +1,15 @@
+python ../serval-igor/youtube-8m-master/train.py --train_data_pattern='./features/train*.tfrecord'  --model=LogisticModel  --train_dir=$MODEL_DIR/video_level_logistic_model
+
+
+python train.py --train_data_pattern='/home/hugo/jupyter-workspace/data/audioset/audioset_v1_embeddings/bal_train/*.tfrecord' --num_epochs=10 -learning_rate=0.001 --learning_rate_decay_examples=400000 --feature_names=audio_embedding --feature_sizes=128 --frame_features --batch_size=512 --num_classes=527 --train_dir=./tmp/mylstmmodel --model=LstmModel
+
+
+python eval.py --eval_data_pattern='/home/hugo/jupyter-workspace/data/audioset/audioset_v1_embeddings/eval/*.tfrecord' --model=LstmModel --feature_names=audio_embedding --feature_sizes=128 --frame_features --batch_size=512 --num_classes=527 --train_dir=./tmp/mylstmmodel --run_once=True
+
+/home/hugo/jupyter-workspace/data/audioset/audioset_v1_embeddings/bal_train/*.tfrecord
+
+
+# LOGISTICMODEL
+python train.py --train_data_pattern='/home/hugo/jupyter-workspace/data/audioset/audioset_v1_embeddings/bal_train/*.tfrecord' --num_epochs=10 -learning_rate=0.001 --learning_rate_decay_examples=400000 --feature_names=audio_embedding --feature_sizes=128 --frame_features --batch_size=512 --num_classes=527 --train_dir=./tmp/myfllogisticmodel --model=FrameLevelLogisticModel --start_new_model=True
+
+python eval.py --eval_data_pattern='/home/hugo/jupyter-workspace/data/audioset/audioset_v1_embeddings/eval/*.tfrecord' --model=FrameLevelLogisticModel --feature_names=audio_embedding --feature_sizes=128 --frame_features --batch_size=512 --num_classes=527 --train_dir=./tmp/myfllogisticmodel --run_once=True
