@@ -12,6 +12,15 @@ We use [this](https://github.com/igor-panteleev/youtube-8m#running-on-your-own-m
 
 Old original [EARS project](https://github.com/karoldvl/EARS/tree/master/ears) for setup details. 
 
+## Use docker with tensorflow
+We use docker images on a GPU enabled host machine.
+
+    docker run --gpus all -it -p 8888:8888 -v /home/hugo/data/git/serval:/tf/serval tensorflow/tensorflow:latest-gpu-py3-jupyter
+
+    docker run --gpus all -it -p 8888:8888 -v /home/hugo/data/git/serval:/tf/serval tensorflow/tensorflow:1.15.2-gpu-py3-jupyter
+
+We are using the latest tensorflow version 1.15.2 , so we do NOT use tensorflow 2.x yet.
+
 ## Description of application
 
 please vistit our website [sensingclues/serval](https://sensingclues.com/serval/) for a description of the real-life application.
