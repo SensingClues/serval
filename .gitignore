@@ -116,3 +116,10 @@ serval/*/wav_files/*
 serval/*/gunshots/*
 serval/*/elephants/*
 serval/*/bush/*
+
+# WAV and TFRecord files
+*.tfrecord
+*.wav
+
+# Model
+data/vggish_model/*
