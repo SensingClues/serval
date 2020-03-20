@@ -123,3 +123,5 @@ serval/*/bush/*
 
 # Model
 data/vggish_model/*
+serval/tmp/*
+serval/events.out*
