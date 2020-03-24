@@ -120,8 +120,13 @@ serval/*/bush/*
 # WAV and TFRecord files
 *.tfrecord
 *.wav
+*.ogg
+data/wav_samples_youtube/unbal/*
+data/wav_samples_youtube/bal/*
+data/wav_samples_youtube/eval/*
 
 # Model
 data/vggish_model/*
 serval/tmp/*
 serval/events.out*
+tmp/*
