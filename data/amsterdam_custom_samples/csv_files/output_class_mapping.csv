@@ -1,0 +1,11 @@
+;label;description;old_label;count_train;count_eval
+0;0;3 Distance 9mm gun shots;1000;356;356
+1;1;556 gunshots;1001;876;876
+2;2;Brommer Alarm;1002;23;23
+3;3;Brommer;1003;812;812
+4;4;Claxons;1004;132;132
+5;5;Dichtklappende autodeuren;1005;164;164
+6;6;Luide mensen (schreeuwen, enz);1006;634;634
+7;7;Motoren;1007;51;51
+8;8;Terrasgeluide (stille mensen);1008;536;536
+9;9;Versterkte muziek;1009;34;34
