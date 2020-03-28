@@ -1,4 +1,4 @@
-;label;description;old_label;count_train;count_eval
+;id;display_name;old_label;count_train;count_eval
 0;0;3 Distance 9mm gun shots;1000;340;372
 1;1;556 gunshots;1001;1748;1756
 2;2;Brommer Alarm;1002;60;32
