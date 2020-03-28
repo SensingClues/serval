@@ -133,3 +133,6 @@ tmp/*
 
 # amsterdam_custom_samples
 data/amsterdam_custom_samples/model_output/*
+
+# Other
+serval/20200326_Wilco/*
