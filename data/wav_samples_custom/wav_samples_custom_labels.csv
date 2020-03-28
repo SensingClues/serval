@@ -1,11 +1,11 @@
-label;folder_name;description;enable
-1000;3_distance_9mm_shots;3 Distance 9mm gun shots;1
-1001;556_gunshots;556 gunshots;1
-1002;a_brommer_alarms;Brommer Alarm;1
-1003;b_brommers;Brommer;1
-1004;c_claxons;Claxons;1
-1005;k_dichtklappende_autodeuren;Dichtklappende autodeuren;1
-1006;m_luide_mensen_schreeuwen_en_zo;Luide mensen (schreeuwen, enz);1
-1007;o_motoren;Motoren;1
-1008;t_terrasgeluiden;Terrasgeluide (stille mensen);1
-1009;v_versterkte_muziek;Versterkte muziek;1
+label;mid;folder_name;description;enabled;source
+1000;/c/a_1000;3_distance_9mm_shots;3 Distance 9mm gun shots;1;custom_amsterdam_sample
+1001;/c/a_1001;556_gunshots;556 gunshots;1;custom_amsterdam_sample
+1002;/c/a_1002;a_brommer_alarms;Brommer Alarm;1;custom_amsterdam_sample
+1003;/c/a_1003;b_brommers;Brommer;1;custom_amsterdam_sample
+1004;/c/a_1004;c_claxons;Claxons;1;custom_amsterdam_sample
+1005;/c/a_1005;k_dichtklappende_autodeuren;Dichtklappende autodeuren;1;custom_amsterdam_sample
+1006;/c/a_1006;m_luide_mensen_schreeuwen_en_zo;Luide mensen (schreeuwen, enz);1;custom_amsterdam_sample
+1007;/c/a_1007;o_motoren;Motoren;1;custom_amsterdam_sample
+1008;/c/a_1008;t_terrasgeluiden;Terrasgeluide (stille mensen);1;custom_amsterdam_sample
+1009;/c/a_1009;v_versterkte_muziek;Versterkte muziek;1;custom_amsterdam_sample

@@ -130,3 +130,6 @@ data/vggish_model/*
 serval/tmp/*
 serval/events.out*
 tmp/*
+
+# amsterdam_custom_samples
+data/amsterdam_custom_samples/model_output/*

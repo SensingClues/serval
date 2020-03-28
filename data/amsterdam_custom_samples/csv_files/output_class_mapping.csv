@@ -1,11 +1,25 @@
-;label;description;old_label;count_train;count_eval
-0;0;3 Distance 9mm gun shots;1000;340;372
-1;1;556 gunshots;1001;1748;1756
-2;2;Brommer Alarm;1002;60;32
-3;3;Brommer;1003;1656;1592
-4;4;Claxons;1004;232;296
-5;5;Dichtklappende autodeuren;1005;332;324
-6;6;Luide mensen (schreeuwen, enz);1006;1216;1320
-7;7;Motoren;1007;124;80
-8;8;Terrasgeluide (stille mensen);1008;1100;1044
-9;9;Versterkte muziek;1009;60;76
+;label;description;old_label;count_train;count_eval;display_name;index
+0;0;3 Distance 9mm gun shots;1000;0;0;3 Distance 9mm gun shots;0
+1;1;556 gunshots;1001;1712;1792;556 gunshots;1
+2;2;Brommer Alarm;1002;44;48;Brommer Alarm;2
+3;3;Brommer;1003;1676;1572;Brommer;3
+4;4;Claxons;1004;260;268;Claxons;4
+5;5;Dichtklappende autodeuren;1005;340;316;Dichtklappende autodeuren;5
+6;6;Luide mensen (schreeuwen, enz);1006;1320;1216;Luide mensen (schreeuwen, enz);6
+7;7;Motoren;1007;108;96;Motoren;7
+8;8;Terrasgeluide (stille mensen);1008;1124;1020;Terrasgeluide (stille mensen);8
+9;9;Versterkte muziek;1009;76;60;Versterkte muziek;9
+10;10;Carnatic music;261;4;4;Carnatic music;10
+11;11;Scary music;282;12;4;Scary music;11
+12;12;Car;307;4044;3916;Car;12
+13;13;Vehicle horn, car horn, honking;308;200;196;Vehicle horn, car horn, honking;13
+14;14;Car alarm;310;4;4;Car alarm;14
+15;15;Car passing by;314;5184;5092;Car passing by;15
+16;16;"Race car, auto racing""";315;772;724;"Race car, auto racing""";16
+17;17;Police car (siren);323;128;100;Police car (siren);17
+18;18;Railroad car, train wagon;332;32;28;Railroad car, train wagon;18
+19;19;Shuffling cards;383;0;0;Shuffling cards;19
+20;20;French horn;186;0;0;French horn;20
+21;21;Air horn, truck horn;318;96;104;Air horn, truck horn;21
+22;22;Train horn;331;24;20;Train horn;22
+23;23;Foghorn;401;0;0;Foghorn;23
