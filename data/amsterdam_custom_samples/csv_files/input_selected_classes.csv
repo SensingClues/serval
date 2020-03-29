@@ -1,25 +1,25 @@
-label;description;enable
-1000;3 Distance 9mm gun shots;1
-1001;556 gunshots;1
-1002;Brommer Alarm;1
-1003;Brommer;1
-1004;Claxons;1
-1005;Dichtklappende autodeuren;1
-1006;Luide mensen (schreeuwen, enz);1
-1007;Motoren;1
-1008;Terrasgeluide (stille mensen);1
-1009;Versterkte muziek;1
-261;"Carnatic music";1
-282;"Scary music";1
-307;"Car";1
-308;"Vehicle horn, car horn, honking";1
-310;"Car alarm";1
-314;"Car passing by";1
-315;Race car, auto racing";1
-323;"Police car (siren)";1
-332;"Railroad car, train wagon";1
-383;"Shuffling cards";1
-186;"French horn";1
-318;"Air horn, truck horn";1
-331;"Train horn";1
-401;"Foghorn";1
+label;new_label;proportion_train_samples;proportion_eval_samples;description;enable
+1000;0;1.0;1.0;3 Distance 9mm gun shots;1
+1001;1;1.0;1.0;556 gunshots;1
+1002;2;4.0;1.0;Brommer Alarm;1
+1003;3;1.0;1.0;Brommer;1
+1004;4;1.0;1.0;Claxons;1
+1005;5;1.0;1.0;Dichtklappende autodeuren;1
+1006;6;1.0;1.0;Luide mensen (schreeuwen, enz);1
+1007;7;1.0;1.0;Motoren;1
+1008;8;1.0;1.0;Terrasgeluide (stille mensen);1
+1009;9;1.0;1.0;Versterkte muziek;1
+261;10;1.0;1.0;"Carnatic music";1
+282;11;1.0;1.0;"Scary music";1
+307;12;1.0;1.0;"Car";1
+308;13;1.0;1.0;"Vehicle horn, car horn, honking";1
+310;14;1.0;1.0;"Car alarm";1
+314;15;1.0;1.0;"Car passing by";1
+315;16;0.5;1.0;Race car, auto racing";1
+323;17;1.0;1.0;"Police car (siren)";1
+332;18;1.0;1.0;"Railroad car, train wagon";1
+383;19;1.0;1.0;"Shuffling cards";1
+186;20;1.0;1.0;"French horn";1
+318;21;1.0;1.0;"Air horn, truck horn";1
+331;22;1.0;1.0;"Train horn";1
+401;23;1.0;1.0;"Foghorn";1
