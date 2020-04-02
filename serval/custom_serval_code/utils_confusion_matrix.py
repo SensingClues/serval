@@ -4,6 +4,7 @@ import itertools
 import tfplot # to install use pip install tensorflow-plot
 import matplotlib
 import numpy as np
+import pandas as pd
 
 from sklearn.metrics import confusion_matrix
 
@@ -15,9 +16,13 @@ def get_labels(file_loc):
         next(f)  # skip header
         reader = csv.reader(f,delimiter =';')
         for row in reader:
-            class_map[int(row[0])] = row[2]
+            class_map[int(row[12])] = row[11] # was 0 en 2
     return class_map
 
+# temp
+def get_labels_2(file_loc):
+    class_map = pd.read_csv(FLAGS.class_map, sep=";")
+    return class_map[['index','display_name']]
 
 def plot_confusion_matrix(correct_labels, predict_labels, labels, title='Confusion matrix', tensor_name = 'MyFigure/image', normalize=False):
     ''' 
