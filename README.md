@@ -175,7 +175,7 @@ tmd = serval_data_folder + '/' + custom_data_folder + '/model_output'
 tmdl = tmd + "/eval_log"
 evaluation_results_csv = serval_data_folder + '/' + custom_data_folder + "/csv_files/output_serval_evaluation.csv"
 
-### 02-00-Evaluate-Serval-model
+### 03-00-plot-evaluation-results
 This notebook interprets the evaluation of the neural network from the previous step.
 
 #### Input
