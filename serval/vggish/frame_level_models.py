@@ -44,8 +44,8 @@ flags.DEFINE_string("video_level_classifier_model", "MoeModel",
                     "Some Frame-Level models can be decomposed into a "
                     "generalized pooling operation followed by a "
                     "classifier layer")
-flags.DEFINE_integer("lstm_cells", 1024, "Number of LSTM cells.")
-flags.DEFINE_integer("lstm_layers", 2, "Number of LSTM layers.")
+flags.DEFINE_integer("lstm_cells", 10, "Number of LSTM cells.") # hk 1024
+flags.DEFINE_integer("lstm_layers", 1, "Number of LSTM layers.") # hk 2
 
 class FrameLevelLogisticModel(models.BaseModel):
 
@@ -81,6 +81,7 @@ class FrameLevelLogisticModel(models.BaseModel):
         avg_pooled, vocab_size, activation_fn=tf.nn.sigmoid,
         weights_regularizer=slim.l2_regularizer(1e-8))
     return {"predictions": output}
+
 
 class DbofModel(models.BaseModel):
   """Creates a Deep Bag of Frames model.
