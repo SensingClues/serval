@@ -1,22 +1,11 @@
 label;proportion_train_samples;proportion_eval_samples;description;old_label;total_count_train;expected_count_train;actual_count_train;total_count_eval;expected_count_eval;actual_count_eval;display_name;index
-0;1.0;1.0;Domestic animals | pets;73;786;786.0;786;813;813.0;813;Domestic animals | pets;0
-1;1.0;1.0;Car;307;3068;3068.0;3068;3254;3254.0;3254;Car;1
-2;1.0;1.0;Vehicle horn | car horn | honking;308;1406;1406.0;1406;1458;1458.0;1458;Vehicle horn | car horn | honking;2
-3;1.0;1.0;Car passing by;314;3950;3950.0;3950;3817;3817.0;3817;Car passing by;3
-4;1.0;1.0;Truck;316;13532;13532.0;13532;13419;13419.0;13419;Truck;4
-5;1.0;1.0;Air horn | truck horn;318;220;220.0;220;357;357.0;357;Air horn | truck horn;5
-6;1.0;1.0;Emergency vehicle;322;1359;1359.0;1359;1464;1464.0;1464;Emergency vehicle;6
-7;1.0;1.0;Chainsaw;347;2523;2523.0;2523;2561;2561.0;2561;Chainsaw;7
-8;1.0;1.0;Accelerating | revving | vroom;353;621;621.0;621;711;711.0;711;Accelerating | revving | vroom;8
-9;1.0;1.0;Siren;396;993;993.0;993;1029;1029.0;1029;Siren;9
-10;1.0;1.0;Power tool;424;1028;1028.0;1028;1060;1060.0;1060;Power tool;10
-11;1.0;1.0;Gunshot | gunfire;427;4047;4047.0;4047;4101;4101.0;4101;Gunshot | gunfire;11
-12;1.0;1.0;556 gunshots;1001;1332;1332.0;1332;1296;1296.0;1296;556 gunshots;12
-13;1.0;1.0;Brommer Alarm;1002;1741;1741.0;1741;1866;1866.0;1866;Brommer Alarm;13
-14;1.0;1.0;Brommer;1003;2914;2914.0;2914;3060;3060.0;3060;Brommer;14
-15;1.0;1.0;Claxons;1004;3356;3356.0;3356;3520;3520.0;3520;Claxons;15
-16;1.0;1.0;Dichtklappende autodeuren;1005;2764;2764.0;2764;2896;2896.0;2896;Dichtklappende autodeuren;16
-17;1.0;1.0;Luide mensen (schreeuwen enz);1006;1011;1011.0;1011;891;891.0;891;Luide mensen (schreeuwen enz);17
-18;1.0;1.0;Motoren;1007;78;78.0;78;75;75.0;75;Motoren;18
-19;1.0;1.0;Terrasgeluide (stille mensen);1008;777;777.0;777;831;831.0;831;Terrasgeluide (stille mensen);19
-20;1.0;1.0;Versterkte muziek;1009;54;54.0;54;48;48.0;48;Versterkte muziek;20
+1;1.0;1.0;Silence;1000;208;208.0;208;51;51.0;51;Silence;1
+2;1.0;1.0;556 gunshots;1001;13034;13034.0;13034;1323;1323.0;1323;556 gunshots;2
+3;1.0;1.0;Brommer Alarm;1002;8295;8295.0;8295;48;48.0;48;Brommer Alarm;3
+4;1.0;1.0;Brommer;1003;13031;13031.0;13031;1143;1143.0;1143;Brommer;4
+5;1.0;1.0;Claxons;1004;11070;11070.0;11070;180;180.0;180;Claxons;5
+6;1.0;1.0;Dichtklappende autodeuren;1005;11303;11303.0;11303;225;225.0;225;Dichtklappende autodeuren;6
+7;1.0;1.0;Luide mensen (schreeuwen enz);1006;12563;12563.0;12563;996;996.0;996;Luide mensen (schreeuwen enz);7
+8;1.0;1.0;Motoren;1007;10112;10112.0;10112;66;66.0;66;Motoren;8
+9;1.0;1.0;Terrasgeluide (stille mensen);1008;12421;12421.0;12421;819;819.0;819;Terrasgeluide (stille mensen);9
+10;1.0;1.0;Versterkte muziek;1009;9568;9568.0;9568;51;51.0;51;Versterkte muziek;10

@@ -1,0 +1,65 @@
+# SERVAL training experiments
+
+# 6
+INFO:tensorflow:training step 5000 | Loss: 0.10 Examples/sec: 3296.05 | Hit@1: 0.99 PERR: 0.99 GAP: 1.00
+INFO:tensorflow:epoch/eval number 8580 | Avg_Hit@1: 0.753 | Avg_PERR: 0.742 | MAP: 0.298 | GAP: 0.715 | Avg_Loss: 5.742686
+
+# 6b
+INFO:tensorflow:training step 5000 | Loss: 0.02 Examples/sec: 2818.34 | Hit@1: 1.00 PERR: 1.00 GAP: 1.00
+INFO:tensorflow:epoch/eval number 9310 | Avg_Hit@1: 0.761 | Avg_PERR: 0.753 | MAP: 0.317 | GAP: 0.748 | Avg_Loss: 5.095139
+
+# 6 c
+INFO:tensorflow:training step 4900 | Loss: 0.01 Examples/sec: 2862.90 | Hit@1: 1.00 PERR: 1.00 GAP: 1.00
+INFO:tensorflow:epoch/eval number 8500 | Avg_Hit@1: 0.766 | Avg_PERR: 0.753 | MAP: 0.316 | GAP: 0.714 | Avg_Loss: 5.403029
+
+# 7
+INFO:tensorflow:training step 1000 | Loss: 2.38 Examples/sec: 3198.19 | Hit@1: 0.74 PERR: 0.70 GAP: 0.75
+INFO:tensorflow:epoch/eval number 1000 | Avg_Hit@1: 0.658 | Avg_PERR: 0.653 | MAP: 0.221 | GAP: 0.665 | Avg_Loss: 2.208634
+
+# 8 logreg
+# regularization_penalty = 1.0
+INFO:tensorflow:training step 1000 | Loss: 2.48 Examples/sec: 6319.36 | Hit@1: 0.73 PERR: 0.69 GAP: 0.72
+
+# 9 balanced resampled
+INFO:tensorflow:training step 3000 | Loss: 4.48 Examples/sec: 6335.02 | Hit@1: 0.71 PERR: 0.57 GAP: 0.56
+INFO:tensorflow:epoch/eval number 3000 | Avg_Hit@1: 0.623 | Avg_PERR: 0.620 | MAP: 0.319 | GAP: 0.629 | Avg_Loss: 2.526669
+
+INFO:tensorflow:training step 1000 | Loss: 4.74 Examples/sec: 6463.22 | Hit@1: 0.67 PERR: 0.53 GAP: 0.54
+INFO:tensorflow:epoch/eval number 1000 | Avg_Hit@1: 0.612 | Avg_PERR: 0.609 | MAP: 0.436 | GAP: 0.608 | Avg_Loss: 2.672839
+
+INFO:tensorflow:training step 1000 | Loss: 4.66 Examples/sec: 6443.29 | Hit@1: 0.69 PERR: 0.54 GAP: 0.53
+INFO:tensorflow:training step 2000 | Loss: 4.54 Examples/sec: 6271.09 | Hit@1: 0.74 PERR: 0.55 GAP: 0.58
+INFO:tensorflow:training step 4000 | Loss: 4.37 Examples/sec: 5894.77 | Hit@1: 0.71 PERR: 0.58 GAP: 0.60
+INFO:tensorflow:training step 5000 | Loss: 4.53 Examples/sec: 6621.03 | Hit@1: 0.70 PERR: 0.55 GAP: 0.58
+INFO:tensorflow:training step 7000 | Loss: 4.48 Examples/sec: 6500.38 | Hit@1: 0.67 PERR: 0.53 GAP: 0.57
+INFO:tensorflow:training step 8000 | Loss: 4.50 Examples/sec: 6401.00 | Hit@1: 0.72 PERR: 0.56 GAP: 0.59
+INFO:tensorflow:training step 10000 | Loss: 4.34 Examples/sec: 6332.14 | Hit@1: 0.74 PERR: 0.57 GAP: 0.59
+INFO:tensorflow:training step 14000 | Loss: 4.36 Examples/sec: 6122.64 | Hit@1: 0.75 PERR: 0.57 GAP: 0.60
+INFO:tensorflow:training step 16000 | Loss: 4.50 Examples/sec: 6317.02 | Hit@1: 0.74 PERR: 0.58 GAP: 0.60
+
+INFO:tensorflow:epoch/eval number 1000 | Avg_Hit@1: 0.614 | Avg_PERR: 0.611 | MAP: 0.457 | GAP: 0.611 | Avg_Loss: 2.667288
+INFO:tensorflow:epoch/eval number 2000 | Avg_Hit@1: 0.621 | Avg_PERR: 0.619 | MAP: 0.472 | GAP: 0.623 | Avg_Loss: 2.570406
+INFO:tensorflow:epoch/eval number 4000 | Avg_Hit@1: 0.625 | Avg_PERR: 0.622 | MAP: 0.481 | GAP: 0.632 | Avg_Loss: 2.507288
+INFO:tensorflow:epoch/eval number 8000 | Avg_Hit@1: 0.626 | Avg_PERR: 0.623 | MAP: 0.482 | GAP: 0.635 | Avg_Loss: 2.481030
+INFO:tensorflow:epoch/eval number 16000 | Avg_Hit@1: 0.630 | Avg_PERR: 0.625 | MAP: 0.482 | GAP: 0.635 | Avg_Loss: 2.474499
+
+# 10 balanced resampled LSTM
+INFO:tensorflow:training step 1000 | Loss: 5.10 Examples/sec: 5105.97 | Hit@1: 0.54 PERR: 0.43 GAP: 0.45
+INFO:tensorflow:training step 2000 | Loss: 4.85 Examples/sec: 4760.59 | Hit@1: 0.64 PERR: 0.50 GAP: 0.52
+INFO:tensorflow:training step 4000 | Loss: 4.29 Examples/sec: 5160.06 | Hit@1: 0.74 PERR: 0.57 GAP: 0.59
+INFO:tensorflow:training step 8000 | Loss: 4.36 Examples/sec: 5165.90 | Hit@1: 0.74 PERR: 0.55 GAP: 0.62
+INFO:tensorflow:training step 16000 | Loss: 4.26 Examples/sec: 4851.17 | Hit@1: 0.75 PERR: 0.58 GAP: 0.63
+INFO:tensorflow:training step 32000 | Loss: 3.82 Examples/sec: 5281.80 | Hit@1: 0.80 PERR: 0.60 GAP: 0.67
+
+INFO:tensorflow:epoch/eval number 1000 | Avg_Hit@1: 0.536 | Avg_PERR: 0.532 | MAP: 0.348 | GAP: 0.508 | Avg_Loss: 3.030513
+INFO:tensorflow:epoch/eval number 2000 | Avg_Hit@1: 0.588 | Avg_PERR: 0.585 | MAP: 0.419 | GAP: 0.594 | Avg_Loss: 2.705125
+INFO:tensorflow:epoch/eval number 4000 | Avg_Hit@1: 0.622 | Avg_PERR: 0.618 | MAP: 0.482 | GAP: 0.652 | Avg_Loss: 2.457763
+INFO:tensorflow:epoch/eval number 8000 | Avg_Hit@1: 0.647 | Avg_PERR: 0.645 | MAP: 0.516 | GAP: 0.681 | Avg_Loss: 2.327163
+INFO:tensorflow:epoch/eval number 16000 | Avg_Hit@1: 0.651 | Avg_PERR: 0.649 | MAP: 0.536 | GAP: 0.691 | Avg_Loss: 2.277471
+INFO:tensorflow:epoch/eval number 32000 | Avg_Hit@1: 0.658 | Avg_PERR: 0.655 | MAP: 0.548 | GAP: 0.695 | Avg_Loss: 2.258439
+
+
+
+
+
+
