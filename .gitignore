@@ -105,23 +105,34 @@ serval/dataset/audio
 serval/dataset/tmp
 serval/dataset
 
+# serval
+serval/*/.ipynb_checkpoints
+serval/*/__pycache__
+serval/*/csv_files/*
+serval/*/models/*
+serval/*/yt8m/*
+serval/*/tfrecords/*
+serval/*/wav_files/*
+serval/*/gunshots/*
+serval/*/elephants/*
+serval/*/bush/*
 
-# hugo tmp
-serval-hugo/tmp
-serval-hugo/features
+# WAV and TFRecord files
+*.tfrecord
+*.wav
+*.ogg
+data/wav_samples_youtube/unbal/*
+data/wav_samples_youtube/bal/*
+data/wav_samples_youtube/eval/*
 
-# vggish
-serval-vvgish/wav_files
-serval-vvgish/models
+# Model
+data/vggish_model/*
+serval/tmp/*
+serval/events.out*
+tmp/*
 
-# igor
-serval-igor/*/.ipynb_checkpoints
-serval-igor/*/__pycache__
-serval-igor/*/csv_files/*
-serval-igor/*/models/*
-serval-igor/*/yt8m/*
-serval-igor/*/tfrecords/*
-serval-igor/*/wav_files/*
-serval-igor/*/gunshots/*
-serval-igor/*/elephants/*
-serval-igor/*/bush/*
+# amsterdam_custom_samples
+data/amsterdam_custom_samples/model_output/*
+
+# Other
+serval/20200326_Wilco/*

@@ -1,0 +1,21 @@
+label;proportion_train_samples;proportion_eval_samples;description;old_label;total_count_train;expected_count_train;actual_count_train;total_count_eval;expected_count_eval;actual_count_eval;display_name;index
+0;1.0;1.0;Domestic animals | pets;73;4026;4026.0;4026;132;132.0;132;Domestic animals | pets;0
+1;1.0;1.0;Car;307;6639;6639.0;6639;866;866.0;866;Car;1
+2;1.0;1.0;Vehicle horn | car horn | honking;308;3333;3333.0;3333;98;98.0;98;Vehicle horn | car horn | honking;2
+3;1.0;1.0;Car passing by;314;5302;5302.0;5302;862;862.0;862;Car passing by;3
+4;1.0;1.0;Truck;316;6026;6026.0;6026;910;910.0;910;Truck;4
+5;1.0;1.0;Emergency vehicle;322;7541;7541.0;7541;538;538.0;538;Emergency vehicle;5
+6;1.0;1.0;Chainsaw;347;7985;7985.0;7985;902;902.0;902;Chainsaw;6
+7;1.0;1.0;Accelerating | revving | vroom;353;4730;4730.0;4730;472;472.0;472;Accelerating | revving | vroom;7
+8;1.0;1.0;Siren;396;4618;4618.0;4618;130;130.0;130;Siren;8
+9;1.0;1.0;Power tool;424;4726;4726.0;4726;156;156.0;156;Power tool;9
+10;1.0;1.0;Gunshot | gunfire;427;4990;4990.0;4990;878;878.0;878;Gunshot | gunfire;10
+11;1.0;1.0;556 gunshots;1001;5253;5253.0;5253;912;912.0;912;556 gunshots;11
+12;1.0;1.0;Brommer Alarm;1002;3984;3984.0;3984;22;22.0;22;Brommer Alarm;12
+13;1.0;1.0;Brommer;1003;5173;5173.0;5173;820;820.0;820;Brommer;13
+14;1.0;1.0;Claxons;1004;4437;4437.0;4437;122;122.0;122;Claxons;14
+15;1.0;1.0;Dichtklappende autodeuren;1005;4452;4452.0;4452;164;164.0;164;Dichtklappende autodeuren;15
+16;1.0;1.0;Luide mensen (schreeuwen enz);1006;5067;5067.0;5067;586;586.0;586;Luide mensen (schreeuwen enz);16
+17;1.0;1.0;Motoren;1007;4181;4181.0;4181;52;52.0;52;Motoren;17
+18;1.0;1.0;Terrasgeluide (stille mensen);1008;4893;4893.0;4893;550;550.0;550;Terrasgeluide (stille mensen);18
+19;1.0;1.0;Versterkte muziek;1009;3954;3954.0;3954;44;44.0;44;Versterkte muziek;19
