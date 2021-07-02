@@ -2,7 +2,7 @@
 
 Sound Event Recognition-based Vigilance for Alerting and Localization
 
-Rework of the original setup in 2020, old code is archived in the folder 20200209-old-code.
+This is the firtst release of the codebase to be used in the OpenEars sound sensor. With this code you can train a new model and build a classifier with custom classes to listen to.
 
 ## Installation
 
