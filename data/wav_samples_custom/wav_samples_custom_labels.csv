@@ -1,5 +1,5 @@
 label;mid;folder_name;description;enabled;source
-1000;/c/a_1000;3_distance_9mm_shots;3 Distance 9mm gun shots;1;custom_amsterdam_sample
+1000;/c/a_1000;0_silence;Silence;1;custom_amsterdam_sample
 1001;/c/a_1001;556_gunshots;556 gunshots;1;custom_amsterdam_sample
 1002;/c/a_1002;a_brommer_alarms;Brommer Alarm;1;custom_amsterdam_sample
 1003;/c/a_1003;b_brommers;Brommer;1;custom_amsterdam_sample
